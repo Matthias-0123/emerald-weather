@@ -1,0 +1,113 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #94a3b8;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #334155;
+    color: #f8fafc;
+    padding: 18px;
+    text-align: left;
+}
+
+td {
+    padding: 16px 18px;
+    border-bottom: 1px solid #334155;
+}
+
+tr:hover {
+    background-color: #334155;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 10px 6px;
+    }
+}
+
+.weather-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+table {
+    min-width: 900px;
+}
+
+th, td {
+    white-space: nowrap;
+}
+
+body {
+    overflow-x: auto;
+}
+
+.datum-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.datum-filter select,
+.datum-filter button {
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+}
+
+.datum-filter button {
+    background-color: #38bdf8;
+    color: #0f172a;
+    cursor: pointer;
+}
